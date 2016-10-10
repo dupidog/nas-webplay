@@ -6,3 +6,6 @@ For more about jwplayer, refer to README.jwplayer.
 1. Put the files to rootdir/subdir of your webserver, turn on cgi function.
 2. Set the ROOTDIR and SUBROOTDIR in the index.cgi.
 3. Enjoy.
+
+##Demo Site:
+http://vpnhk.dupidog.cn/nas-webplay
