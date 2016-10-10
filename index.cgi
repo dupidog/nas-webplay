@@ -3,8 +3,9 @@
 echo "Content-type: text/html"
 echo ""
 
-ROOTDIR="/var/www/webplay-files"
-SUBROOTDIR="/"
+. config.include
+[ ! -d "$ROOTDIR" -o -z "$ROOTDIR" ] && ROOTDIR="/var/www/mediafiles"
+[ -z "$SUBROOTDIR" ] && SUBROOTDIR="/"
 
 mkdir -p links
 
