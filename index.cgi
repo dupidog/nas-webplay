@@ -39,7 +39,7 @@ print i;
 METHOD=${QUERY_STRING:0:1}
 URL=${QUERY_STRING:2}
 URL=${URL#/}
-URL=$(echo $URL | urldecode)
+URL=$(echo $URL | sed 's#\.\./##g' |urldecode)
 
 CNT=1
 while :; do  
