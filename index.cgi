@@ -2,6 +2,7 @@
 
 echo "Content-type: text/html"
 echo ""
+echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">"
 
 . config.include
 [ ! -d "$ROOTDIR" -o -z "$ROOTDIR" ] && ROOTDIR="/var/www/mediafiles"
